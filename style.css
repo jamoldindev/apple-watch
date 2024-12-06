@@ -1,0 +1,283 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+
+.logo {
+    display: block;
+}
+
+.nav .right {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.list-item {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.list-item a {
+    font-family: sans-serif;
+    font-size: 15px;
+    color: #000;
+    font-weight: 400;
+    line-height: 22.5px;
+    position: relative;
+}
+
+.list-item a:hover {
+    color: #EA625C;
+    transition: 3s;
+}
+
+.list-item a::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: transparent;
+}
+
+.list-item a:hover::after {
+    background-color: #EA625C;
+}
+
+.list-item a.activi {
+    color: #EA625C;
+}
+
+.list-item a.active:hover::after {
+    background-color: #EA625C;
+}
+
+.search {
+    width: 153px;
+    border-bottom: 1px solid #333;
+}
+
+.search input {
+    border: none;
+    outline: none;
+}
+
+.site-btn {
+    padding: 12px;
+    color: #fff;
+    background: #EA625C;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 27px;
+    border: none;
+    text-transform: uppercase;
+    font-family: sans-serif;
+}
+
+.site-btn:hover {
+    border-color: #EA625C;
+    background-color: transparent;
+    color: #333;
+}
+
+.title {
+    color: #000;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 120%;
+}
+
+.describe {
+    color: #777;
+    font-size: 16px;
+    line-height: 150%;
+    margin-bottom: 30px;
+    margin-right: 0%;
+}
+
+.hero {
+    margin-top: 80px;
+}
+
+.hero_content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.hero_content .right {
+    width: 587px;
+    height: 565px;
+    position: relative;
+
+}
+
+.hero_content .right img {
+    width: inherit;
+    height: inherit;
+    margin-left: 70%;
+}
+
+.cards {
+    padding: 70px 0;
+
+}
+
+.cards-content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 80px;
+}
+
+.card-title {
+    margin-bottom: 30px;
+    color: #222;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 150%;
+    text-transform: uppercase;
+    font-family: sans-serif;
+
+}
+
+.card p {
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    padding: 5px;
+}
+
+.dotts {
+    display: flex;
+    gap: 10px;
+}
+
+.dotts span {
+    width: 8px;
+    height: 8px;
+    background-color: #DDD;
+}
+
+.learn-more {
+    color: #EA625C;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 160%;
+    text-transform: uppercase;
+    padding-left: 50px;
+    position: relative;
+}
+
+.learn-more::before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 3px;
+    background-color: #EA625C;
+}
+
+
+.about {
+    padding: 70px 0;
+
+}
+
+.about-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.about-info .left1 {
+    max-width: 490px;
+}
+
+.right1 {
+    width: 400px;
+    height: 600px;
+}
+
+.right1 img {
+    width: inherit;
+    height: inherit;
+}
+
+.left1 h1 {
+    font-family: sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 60px;
+}
+
+.left1 p {
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+.info {
+    padding: 240px 0;
+    width: 100%;
+    background-image: url(./images/iphone5.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.info .left6 {
+    max-width: 490px;
+    margin-left: auto;
+
+}
+
+.left6 h1 {
+    margin-bottom: 20px;
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 60px;
+}
+
+.left6 p {
+    margin-bottom: 20px;
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
